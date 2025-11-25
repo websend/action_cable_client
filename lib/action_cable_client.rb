@@ -27,6 +27,7 @@ class ActionCableClient
 
   def_delegator :_websocket_client, :onerror, :errored
   def_delegator :_websocket_client, :send, :send_msg
+  def_delegator :_websocket_client, :close, :close
 
   # @param [String] uri - e.g.: ws://domain:port
   # @param [String] params - the name of the channel on the Rails server
